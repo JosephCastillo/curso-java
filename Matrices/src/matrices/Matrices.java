@@ -9,12 +9,15 @@ public class Matrices {
 //            int [] miMatriz2 = {4,34,5,3,26,8};
 
         Ejercicios ejercicios = new Ejercicios();
+        MatrizBidimensional bidi = new MatrizBidimensional();
 
 //        ejercicios.numerosDelUnoAlDiez();
 //        ejercicios.promedioCalificaciones();
 //        ejercicios.buscarUnNumero();
 //        ejercicios.invertirArray();
-        ejercicios.calculadoraDeNotas();
+//        ejercicios.calculadoraDeNotas();
+//        ejercicios.ejemploForEach();
+        bidi.miMatrix();
     }
     
     
