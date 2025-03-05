@@ -5,7 +5,6 @@ public class Coche {
     private int ruedas;
     private int largo;
     private int ancho;
-    private int motor;
     private int pesoPlataforma;
     private String color;
     private int pesoTotal;
@@ -15,7 +14,6 @@ public class Coche {
         ruedas = 4;
         largo = 2000;
         ancho = 300;
-        motor = 1600;
         pesoPlataforma = 500;
     }
 

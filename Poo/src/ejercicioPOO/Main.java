@@ -19,6 +19,7 @@ public class Main {
         System.out.println("La resta de los números es: " + calc.restar(a,b));
         System.out.println("La multiplicación de los números es: " + calc.multiplicar(a,b));
         System.out.println("La división de los números es: " + calc.dividir(a,b));
+        scanner.close();
 
     }
 
