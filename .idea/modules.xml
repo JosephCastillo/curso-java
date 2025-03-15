@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bucles/Bucles.iml" filepath="$PROJECT_DIR$/Bucles/Bucles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Condicionales/Condicionales.iml" filepath="$PROJECT_DIR$/Condicionales/Condicionales.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjercicioArrayBidimensional/EjercicioArrayBidimensional.iml" filepath="$PROJECT_DIR$/EjercicioArrayBidimensional/EjercicioArrayBidimensional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjercicioVidaReal/EjercicioVidaReal.iml" filepath="$PROJECT_DIR$/EjercicioVidaReal/EjercicioVidaReal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JOptionPane/JOptionPane.iml" filepath="$PROJECT_DIR$/JOptionPane/JOptionPane.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ManipulacionDeCadenas/ManipulacionDeCadenas.iml" filepath="$PROJECT_DIR$/ManipulacionDeCadenas/ManipulacionDeCadenas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Matrices/Matrices.iml" filepath="$PROJECT_DIR$/Matrices/Matrices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Poo/Poo.iml" filepath="$PROJECT_DIR$/Poo/Poo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimerosPasos/PrimerosPasos.iml" filepath="$PROJECT_DIR$/PrimerosPasos/PrimerosPasos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TiposDeDatos/TiposDeDatos.iml" filepath="$PROJECT_DIR$/TiposDeDatos/TiposDeDatos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/curso-java.iml" filepath="$PROJECT_DIR$/.idea/curso-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/formatiandoEntradaSalida/formatiandoEntradaSalida.iml" filepath="$PROJECT_DIR$/formatiandoEntradaSalida/formatiandoEntradaSalida.iml" />
+    </modules>
+  </component>
+</project>
