@@ -77,6 +77,6 @@ class Alumno extends Persona {
 	}
 
 	public String dameDescripcion() {
-		return "Este alumno está estudiando la carrera de " + this.carrera;
+		return "Este alumno está estudiando la carrera  de " + this.carrera;
 	}
 }
