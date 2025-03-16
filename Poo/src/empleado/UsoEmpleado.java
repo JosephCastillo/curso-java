@@ -8,18 +8,6 @@ public class UsoEmpleado {
 
     public static void main(String[] args) {
 
-        // Empleado empleado1 = new Empleado("Joseph Castillo", 1700000, 2019, 6, 15);
-        // Empleado empleado2 = new Empleado("Andres Castillo", 1800000, 2020, 8, 29);
-        // Empleado empleado3 = new Empleado("Camila Prieto", 1600000, 2024, 3, 31);
-        
-        // empleado1.subeSueldo(5);
-        // empleado2.subeSueldo(5);
-        // empleado3.subeSueldo(5);
-
-        // System.out.println("Nombre: " + empleado1.dameNombre() + " Sueldo: " + empleado1.dameSueldo() + " Fecha de alta: " + empleado1.dameAltaContrato());
-        // System.out.println("Nombre: " + empleado2.dameNombre() + " Sueldo: " + empleado2.dameSueldo() + " Fecha de alta: " + empleado2.dameAltaContrato());
-        // System.out.println("Nombre: " + empleado3.dameNombre() + " Sueldo: " + empleado3.dameSueldo() + " Fecha de alta: " + empleado3.dameAltaContrato());
-
         Empleado [] misEmpleados = new Empleado[5];
         
         Jefatura jefeRRHH = new Jefatura("Andrea", 20000, 2023, 4, 2);
