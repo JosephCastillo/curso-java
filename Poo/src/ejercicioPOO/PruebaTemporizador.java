@@ -1,5 +1,6 @@
 
 package ejercicioPOO;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import javax.swing.Timer;
 import java.awt.event.ActionListener;
@@ -33,6 +34,7 @@ class DimeLaHora implements ActionListener{
     public void actionPerformed(ActionEvent e){
             Date ahora = new Date();
             System.out.println("La hora actual cada 5 segundos: " + ahora);
+            Toolkit.getDefaultToolkit().beep();
 
     }
 }
