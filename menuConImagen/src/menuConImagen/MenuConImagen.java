@@ -2,10 +2,13 @@ package menuConImagen;
 
 import java.awt.BorderLayout;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 
 public class MenuConImagen {
 	public static void main(String[] args){
@@ -50,6 +53,21 @@ class Lamina extends JPanel{
 		menuConImagen.add(edicion);
 		menuConImagen.add(herramientas);
 		
+		//Crea item para el menu edición con el ícono correspondiente
+		cortar = new JMenuItem("Cortar",new ImageIcon("src/menuConImagen/cut.png"));
+		copiar = new JMenuItem("Copiar",new ImageIcon("src/menuConImagen/copy.png"));
+		
+		//Modifica el lugar del icono
+		copiar.setHorizontalTextPosition(SwingConstants.LEFT);
+		
+		
+		pegar = new JMenuItem("Pegar",new ImageIcon("src/menuConImagen/paste.png"));
+		
+		//Añadir items al menu edición
+		edicion.add(cortar);
+		edicion.add(copiar);
+		edicion.add(pegar);
+		
 	}
 	
 	
@@ -61,4 +79,5 @@ class Lamina extends JPanel{
 	//ATRIBUTOS
 	private JMenuBar menuConImagen; //Barra de menú.
 	private JMenu archivo, edicion, herramientas;// Menus desplegables.
+	private JMenuItem copiar, pegar, cortar;
 }
