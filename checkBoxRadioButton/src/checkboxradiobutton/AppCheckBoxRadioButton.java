@@ -19,6 +19,7 @@ class VentanaCheckBoxRadioButton extends JFrame{
 		
 		//Asignar barra de menú a la ventana
 		setJMenuBar(miLaminaCheckBoxRadioButton.ObtenerBarraMenu());
+		setTitle("Uso de Checkbox y Radiobutton");
 	}
 }
 
