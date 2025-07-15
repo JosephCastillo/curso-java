@@ -16,6 +16,8 @@ class ReadFile {
             FileReader entry = new FileReader("src/file.txt");
             int character;
             character = entry.read();
+
+            // Read and print characters until the end of the file
             while (character != -1) {
                 System.out.print((char) character);
                 character = entry.read();
