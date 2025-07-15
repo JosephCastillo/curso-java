@@ -1,0 +1,4 @@
+Hola, este es un archivo de prueba.
+Está diseñado para practicar la lectura de texto en Java.
+Puedes leer este archivo carácter por carácter o línea por línea.
+¡Buena suerte aprendiendo buffers!
