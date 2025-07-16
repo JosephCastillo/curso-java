@@ -16,11 +16,12 @@ public class Main {
 
 
         try {
-            ObjectOutputStream writingFile = new ObjectOutputStream(new FileOutputStream("src/employees.dat"));
 
-            writingFile.writeObject(staff);
+            //ObjectOutputStream writingFile = new ObjectOutputStream(new FileOutputStream("src/employees.dat"));
 
-            writingFile.close();
+            //writingFile.writeObject(staff);
+
+            //writingFile.close();
 
             ObjectInputStream readingFile = new ObjectInputStream(new FileInputStream("src/employees.dat"));
 
@@ -32,7 +33,7 @@ public class Main {
                 System.out.println(e);
             }
 
-        }catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("Error writing to file: " + e.getMessage());
         }
 
@@ -42,14 +43,17 @@ public class Main {
 
 class Employee implements Serializable {
 
+    @Serial
+    private static final long serialVersionUID = 1L;
+
     private String name;
-    private double salary;
+    private double salaries;
     private Date contractDate;
 
 
     public Employee(String name, double salary, int year, int month, int day) {
         this.name = name;
-        this.salary = salary;
+        this.salaries = salary;
         GregorianCalendar calendar = new GregorianCalendar(year, month - 1, day);
         contractDate = calendar.getTime();
     }
@@ -58,8 +62,8 @@ class Employee implements Serializable {
         return name;
     }
 
-    public double getSalary() {
-        return salary;
+    public double getSalaries() {
+        return salaries;
     }
 
     public Date getContractDate() {
@@ -67,16 +71,18 @@ class Employee implements Serializable {
     }
 
     public void raiseSalary(double byPercent) {
-        double raise = salary * byPercent / 100;
-        salary += raise;
+        double raise = salaries * byPercent / 100;
+        salaries += raise;
     }
 
     public String toString() {
-        return "Employee[name=" + name + ", salary=" + salary + ", contractDate=" + contractDate + "]";
+        return "Employee[name=" + name + ", salary=" + salaries + ", contractDate=" + contractDate + "]";
     }
 }
 
 class Administrator extends Employee {
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private double bonus;
 
@@ -85,8 +91,8 @@ class Administrator extends Employee {
         this.bonus = 0;
     }
 
-    public double getSalary() {
-        double baseSalary = super.getSalary();
+    public double getSalaries() {
+        double baseSalary = super.getSalaries();
         return baseSalary + bonus;
     }
 
@@ -100,6 +106,6 @@ class Administrator extends Employee {
 
     @Override
     public String toString() {
-        return "Administrator[name=" + getName() + ", salary=" + getSalary() + ", contractDate=" + getContractDate() + ", bonus=" + bonus + "]";
+        return "Administrator[name=" + getName() + ", salary=" + getSalaries() + ", contractDate=" + getContractDate() + ", bonus=" + bonus + "]";
     }
 }
